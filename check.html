@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        *,
+        body {
+            font-family: sans-serif;
+            padding: 0px;
+            border: 0px;
+            box-sizing: border-box;
+        }
+        
+        .heros {
+            height: 100vh;
+            width: auto;
+            background-color: rgb(11, 11, 11);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .heros h1 {
+            color: aliceblue;
+        }
+        
+        .main_div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px 50px 20px;
+        }
+        
+        .image_bg {
+            width: 50%;
+            height: 599px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .image_bg_inner {
+            width: 100%;
+            height: 600px;
+            background-image: url('assets/images/about-shape2.png.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .image_div {
+            width: 400px;
+            height: 482px;
+            padding: 10px;
+            margin-left: 0px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .imgd1 {
+            background-image: url('assets/images/div.about-img-1.svg');
+            margin-top: 0px;
+        }
+        
+        .imgd2 {
+            background-image: url('assets/images/div.about-img.svg');
+            margin-top: 150px;
+        }
+        
+        .content {
+            width: 50%;
+        }
+        
+        .content .content-heading {
+            font-size: 5rem;
+        }
+        
+        .content .content-p {
+            font-weight: bolder;
+        }
+        
+        @media screen and (max-width: 1400px) {
+            .content {
+                width: 40%;
+            }
+            .content .content-heading {
+                font-size: 4rem;
+            }
+            .image_div {
+                width: 500px;
+                height: 382px;
+            }
+        }
+        
+        @media screen and (max-width: 1200px) {
+            .image_bg {
+                width: 100%;
+            }
+            .content {
+                width: auto;
+            }
+            .content .content-heading {
+                font-size: 3.5rem;
+            }
+            .main_div {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="heros">
+        <h1>
+            Scroll Down View
+        </h1>
+    </div>
+    <div class="main_div">
+
+        <div class="image_bg">
+            <div class="image_bg_inner">
+                <div class="image_div imgd1" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                </div>
+                <div class="image_div imgd2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 class="content-heading">Inovatiove Web Designing</h1>
+            <p class="content-p">
+                We combine cutting-edge technology and creative design to build websites that not only look stunning but also perform flawlessly. With our expertise, your digital presence will leave a lasting impression.
+            </p>
+        </div>
+
+    </div>
+    <div class="" style="height: 100vh; width: 100%; background-color: brown;">
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
